@@ -1,0 +1,24 @@
+.events{
+    margin-top: 50px;
+    p{
+        color: black;
+    }
+
+    .evenements{
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        margin-top: 30px;
+
+        button{
+            border: none;
+            border-radius: 3px;
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .seance{
+            width: 25%;
+        }
+    }
+}

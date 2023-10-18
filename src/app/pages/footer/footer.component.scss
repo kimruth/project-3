@@ -1,0 +1,21 @@
+footer{
+    background: rgb(255, 3, 188);
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        // background-color: navy;
+
+        li{
+            list-style: none;
+            width: 230px;
+            color: black;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

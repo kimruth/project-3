@@ -1,0 +1,37 @@
+.temoignages {
+    display: flex;
+
+    .temoignage {
+        color: black;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .temoin {
+            width: 50%;
+            margin-left: 100px;
+
+            h5 {
+                color: rgb(2, 182, 254);
+                text-align: left;
+            }
+
+            p {
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .boutique {
+        width: 300px;
+        button {
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            background-color: rgb(255, 3, 188);
+            color: white;
+            margin-right: 90px;
+            font-size: 1.1em;
+            margin-top: 250px;
+        }
+    }
+}
