@@ -6,7 +6,7 @@
     text-align: left;
     font-size: 1.5em;
     width: inherit;
-    justify-items: center;
+    // justify-items: center;
 
     .details{
         height: inherit;
@@ -45,7 +45,7 @@ main {
 
         h1 {
             color: rgb(255, 3, 158);
-            text-align: center;
+            // text-align: center;
             margin-bottom: 20px;
         }
 
@@ -58,9 +58,11 @@ main {
             
             .content {
                 width: 190px;
-                // background: red;
                 height: 250px;
-                // border: 1px solid gray;
+
+                p{
+                    text-align: left;
+                }
 
                 .title{
                     width: 70%;
@@ -72,9 +74,8 @@ main {
                     border-left: 10px solid rgb(255, 3, 188);
                     margin-bottom: 2px;
                     border-radius: 50%;
-                    text-align: center;
+                    // text-align: center;
                     color: black;
-                    // background-color: red;
                 }
 
                 img {

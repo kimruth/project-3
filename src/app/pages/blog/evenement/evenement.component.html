@@ -11,7 +11,7 @@
             <p>Nous tenons les ceminaires tout les mois (au moins une fois par mois). Les ceminairesse se tiennent sur
                 diverses formes, ils sont soit physiques ou virtuels. Chaque seance traite sur une question precise et
                 pose les solutions sur table a chaque fin de ceux-ci.</p>
-                <button>Plus d'info</button>
+                <button>readmore</button>
         </div>
         <div class="seance campagnes">
             <h4>Nos campagnes</h4>
@@ -19,7 +19,25 @@
             <p>En faveur des problems que vous nous presentez et de celles qui n'ont pas l'occasion de profiter de nos
                 seances de ceminaire et/ou de notre site, nous organisons des seances des campagne une fois par mois
                 afin d'essayer de relever autant de femmes que nous pouvons.</p>
-                <button>Plus d'info</button>
+                <button>readmore</button>
         </div>
     </div>
 </div>
+
+<!-- <div class="seances">
+    <div class="row" *ngIf="isActive">
+
+        <div class="col-4 mb-4" *ngFor="let article of articles; index as i">
+            <div class="card">
+
+                <div class="card-body">
+                    <h4 class="card-title" appHighlight>{{article.title}}</h4>
+                    <img src="" alt="">{{ article.image }}
+                    <p class="card-text" *ngIf="!article.readmore">{{article.content | word}}</p>
+                    <p class="card-text" *ngIf="article.readmore">{{article.content}}</p>
+                    <a href="{{article.id}}" class="btn" [ngClass]="article.readmore ? ' btn-success' : 'btn-danger'" (click)="readMore($event, i)">{{'Read More' | uppercase}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

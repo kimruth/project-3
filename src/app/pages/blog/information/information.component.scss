@@ -1,29 +1,68 @@
 .information{
     margin-top: 50px;
 
+    h2{
+        color: rgb(2, 182, 254);
+    }
+
     .infos{
 
         .content{
             display: flex;
             justify-content: space-around;
+            justify-content: center;
             margin-top: 30px;
             color: black;
+            overflow: hidden;
             
             .info{
-                width: 50%;
+                margin: 0 20px;
 
                 img{
-                    width: 190px;
+                    // width: 190px;
+                    height: 250px;
+                }
+            }
+            .film{
+                img{
+                    width: 170px;
+                    height: 200px;
                 }
             }
         }
-        // .journaux{
-        // }
+        .journaux{
+            background: rgba(0, 0, 0, 0.100);
+            margin-top: 20px;
+        }
 
-        // .livres{
-        // }
+        .livres{
+            // margin-top: 30px;
+            background: rgba(0, 0, 0, 0.195);
+        }
 
-        // .films{
-        // }
+        .films{
+            background: rgba(0, 0, 0, 0.100);
+            // margin-top: 30px;
+        }
+    }
+    .prev{
+        position: relative;
+        right: 43%;
+        bottom: 180px;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #ffffffbe;
+        border: none;
+        background: rgba(2, 183, 254, 0.345);
+    }
+    .next{
+        position: relative;
+        left: 47%;
+        bottom: 180px;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #ffffffbe;
+        border: none;
+        background: rgba(2, 183, 254, 0.345);
     }
 }

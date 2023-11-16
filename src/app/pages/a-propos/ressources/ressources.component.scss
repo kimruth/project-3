@@ -1,8 +1,17 @@
-.ressources{
-    width: 80%;
-    margin-top: 30px;
-    margin-left: 130px;
-    p{
-        color: black;
+.ressource {
+    margin-top: 60px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .ressources {
+        width: 80%;
+        margin-left: 130px;
+        display: flex;
+
+        p {
+            color: black;
+        }
     }
 }

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./assistance.component.scss']
 })
 export class AssistanceComponent {
+articles: any;
+readMore($event: MouseEvent,_t10: number) {
+throw new Error('Method not implemented.');
+}
 
 }

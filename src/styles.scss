@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,21 @@
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    color: white;
+    
+    #back{
+        // margin-bottom: 400px;
+        // margin-left: -150px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 130px;
+        color: white;
+    }
+    button{
+        cursor: pointer;
+    }
+
 
     h1, h2{
         color: rgb(255, 3, 188);
@@ -32,8 +49,7 @@ html{
     
             p{
                 font-size: 1.3rem;
-            }
-                
+            }      
         }
     }
 

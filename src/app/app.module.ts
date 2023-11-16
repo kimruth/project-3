@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './pages/header/header.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { AssistanceComponent } from './pages/assistance/assistance.component';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
@@ -17,12 +16,22 @@ import { ColaborationComponent } from './pages/a-propos/colaboration/colaboratio
 import { AideComponent } from './pages/a-propos/aide/aide.component';
 import { InformationComponent } from './pages/blog/information/information.component';
 import { EvenementComponent } from './pages/blog/evenement/evenement.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './pages/header/header.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HighlightDirective } from './pages/directives/highlight.directive';
+import { WordPipe } from './pages/pipes/word.pipe';
+import { BgSizePipe } from './pages/pipes/bg-size.pipe';
+import { PrevDirective } from './pages/directives/prev.directive';
+import { NextDirective } from './pages/directives/next.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     BlogComponent,
     AssistanceComponent,
     AProposComponent,
@@ -36,10 +45,22 @@ import { EvenementComponent } from './pages/blog/evenement/evenement.component';
     AideComponent,
     InformationComponent,
     EvenementComponent,
+    SignupComponent,
+    SigninComponent,
+    HeaderComponent,
+    PageNotFoundComponent,
+    ContactComponent,
+    HighlightDirective,
+    WordPipe,
+    BgSizePipe,
+    PrevDirective,
+    NextDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
