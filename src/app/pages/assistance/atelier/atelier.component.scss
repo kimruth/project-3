@@ -16,13 +16,13 @@
         color: black;
     }
     .conseil{
-        width: 120vw;
+        // width: 50vw;
 
         p{
-            margin-left: 200px;
+            margin-left: 150px;
         }
         h4{
-            margin-left: 250px;
+            margin-left: 200px;
         }
     }
     .conseils{
@@ -46,18 +46,19 @@
 .person{
     background-image: url(../../../../assets/img/jimage2.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .perso1{
     background-image: url(../../../../assets/img/images4.jpeg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .perso{
     margin-left: 380px;
-    width: 65%;
 }
 .persoe{
     background-image: url(../../../../assets/img/44034.avif);
     background-repeat: no-repeat;
-    // width: 1000px;
+    background-size: cover;
 }

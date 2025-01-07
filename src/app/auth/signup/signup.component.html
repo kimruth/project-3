@@ -1,7 +1,7 @@
 <main>
 
     <body class="body">
-        <button routerLink="/accueil" id="back">Retour a la page d'accueil</button>
+        <!-- <button routerLink="/accueil" id="back">Retour a la page d'accueil</button> -->
         <div class="container">
 
             <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form" novalidate>
@@ -33,7 +33,7 @@
                             Please enter a valid email
                         </p>
                     </div>
-                    <p *ngIf=" saveError">
+                    <p *ngIf="saveError">
                         email Already exists
                     </p>
                 </div>

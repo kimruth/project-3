@@ -10,13 +10,13 @@ import { AuthService } from '../auth.service';
 })
 export class SignupComponent {
   signupForm!: FormGroup
-  saveError!:string
+  saveError!: string
 
   constructor(
     private formbuilder: FormBuilder,
     private authService: AuthService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit(): void {
 
@@ -24,7 +24,7 @@ export class SignupComponent {
 
       name: new FormControl('', [
         Validators.required,
-        Validators.minLength(4),
+        Validators.minLength(3),
         Validators.maxLength(20)
       ]),
       email: new FormControl('', [
@@ -35,21 +35,18 @@ export class SignupComponent {
         Validators.required,
         Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,10}$/),
       ]),
-  })
-}
-onSubmit(): void {
-  const save = this.authService.register(this.signupForm.value);
-  if (!save.error) {
-
-    localStorage.setItem('auth', JSON.stringify(save.data))
-    this.router.navigate(['accueil'], {
-
-      
     })
-  } else {
-
-    this.saveError = save.message
   }
-}
+  onSubmit(): void {
+    const save = this.authService.register(this.signupForm.value);
+    if (save.error) {
+      // this.router.navigate(['/login']);
+      localStorage.setItem('auth', JSON.stringify(save.data))
+      this.router.navigate(['accueil'], {
+      })
+    } else {
 
+      this.saveError = save.message
+    }
+  }
 }

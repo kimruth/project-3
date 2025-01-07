@@ -1,6 +1,7 @@
 .header {
     height: 9vh;
     width: 100%;
+    position: fixed;
     background-image: url(../../../assets/img/12961.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +27,13 @@
 
                 li {
                     list-style: none;
+                    
+                    a:hover{
+                        color: rgb(255, 3, 188);
+                        background: transparent;
+                        padding: 3px;
+                        border-radius: 2px;
+                    }
 
                     a {
                         text-decoration: none;
