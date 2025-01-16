@@ -1,14 +1,35 @@
-.colaborations {
-    margin-top: 60px;
-    
-    h2 {
-        margin-bottom: 20px;
-    }
-    
-    .colaboration {
-        margin-left: 230px;
-        width: 70%;
-        color: black;
+.container {
+    background: #fff;
+    box-shadow: 1px 2px 3px 9px #0000002e;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0px 0px 50px;
+    padding: 10px 10px;
+    width: 70%;
+    height: 150px;
+    position: relative;
+    left: 200px;
+    top: 13px;
+
+    // .colaborations:hover {
+    //     background-color: rgba(2, 183, 254, 0.586);
+    //     box-shadow: 1px 2px 3px 9px rgba(255, 3, 188, 0.784);
+    // }
+
+    .colaborations {
         display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    img {
+        height: 130px;
+        border-radius: 3%;
+    }
+
+    p {
+        font-size: 17px;
+        padding-left: 20px;
+        color: black;
     }
 }

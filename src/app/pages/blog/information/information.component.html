@@ -1,116 +1,217 @@
 <div class="information">
     <h1>Information</h1>
     <div class="infos">
-        <div class="journaux">
+
+
+        <!-- <div class="titre" style="margin-top: 20px; text-decoration:underline; text-decoration-color:brown">
             <h2>Journaux</h2>
-            <div class="content">
-                <div class="info">
-                    <img src="../../../../assets/img/article.jpg" alt="">
-                    <span>Madame Severine au debat pour la question d'honneur de la femme</span>
+            <div class="journaux">
+                <div id="carrousel" class="carrousel content">
+                    <div id="container" class="">
+                        <div class="info">
+                            <img src="../../../../assets/img/article.jpg" alt="">
+                            <span>Madame Severine au debat pour la question d'honneur de la femme</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/article1.jpg" alt="">
+                            <span>Jemyma Arab defend sa cause devant les tribunaux</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/article2.jpg" alt="">
+                            <span>Une femme est virer de son boulot parce qu'elle a dit face aux arcelements</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/article3.jpg" alt="">
+                            <span>Kene Aslee a la tete du feminisme en 2022</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/article4.jpg" alt="">
+                            <span>Jemoma Ewono se rend au tribunal</span>
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/article5.jpg" alt="">
+                            <span>Mael Mebele devient monte sa propre entreprise et y est PDG</span>
+                        </div>
+
+                        <h2>Journaux</h2>
+                    </div>
                 </div>
-                <div class="info">
-                    <img src="../../../../assets/img/article1.jpg" alt="">
-                    <span>Jemyma Arab defend sa cause devant les tribunaux</span>
+                <div class="btn">
+                    <button id="prev g" class="prev">
+                        < </button>
+                            <button id="next d" class="next"> > </button>
                 </div>
-                <div class="info">
-                    <img src="../../../../assets/img/article2.jpg" alt="">
-                    <span>Une femme est virer de son boulot parce qu'elle a dit face aux arcelements</span>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/article3.jpg" alt="">
-                    <span>Kene Aslee a la tete du feminisme en 2022</span>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/article4.jpg" alt="">
-                    <span>Jemoma Ewono se rend au tribunal</span>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/article5.jpg" alt="">
-                    <span>Mael Mebele devient monte sa propre entreprise et y est PDG</span>
-                </div>
+                <script>
+                let items = document.querySelectorAll('.carousel .info');
+                let next = document.getElementById('next');
+                let prev = document.getElementById('prev');
+
+                let active = 3;
+                function laodShow(){
+                    let stt = 0;
+                    for (var i = active + 1; i < items.length; i++){
+                        stt++;
+                        items[i].style.transform = 'translateX($(120*stt)px) scale($(1 - 0.2*stt)) perspective(16px) rotateY(-1deg)';
+                        items[i].style.zIndex = -stt;
+                        items[i].style.filter = 'blur(5px)';
+                        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+                    }
+                    stt = 0;
+                    for (var i = active -1; i >= 0; i--){
+                        stt++;
+                        items[i].style.transform = 'translateX($(-120*stt)px) scale($(1 - 0.2*stt)) perspective(16px) rotateY(1deg)';
+                        items[i].style.zIndex = -stt;
+                        items[i].style.filter = 'blur(5px)';
+                        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+                    }
+                }
+                laodShow()
+                next.onclick = function(){
+                    active = active + 1 < items.length ? active + 1 : active;
+                    laodShow()
+                }
+                prev.onclick = function(){
+                    active = active - 1 < items.length ? active - 1 : active;
+                    laodShow()
+                }
+            </script>
             </div>
-            <div class="btn">
-                <button type="button" class="prev" appPrev><</button>
-                <button type="button" class="next" appNext>></button>
+        </div> -->
+
+
+        <div class="titre">
+            <h2 style="margin-top: 20px; text-decoration:underline; text-decoration-color:brown">Livres</h2>
+            <p style="color: black;">Nous proposons des livres parlant de femmes fortes, batantes et qui ont le sens du developpement personnel et social.</p>
+            <div class="livres">
+                <!-- <h2>Livres</h2> -->
+                <div id="carrousel" class="carrousel content">
+                    <div id="container" class="">
+                        <div class="info">
+                            <img src="../../../../assets/img/book.jpg" alt="">
+                            <!-- <span>Femme d'honneur</span>
+                    <p><i>(Martine Elbrish-1968)</i></p> -->
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/book1.jpg" alt="">
+                            <!-- <span>Feministe au pas? Je choisi ma voie.</span>
+                    <p><i>(Camilla fotsing-1876)</i></p> -->
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/book2.jpg" alt="">
+                            <!-- <span>Se relever ou se perdre?</span>
+                    <p><i>(D'emraude Beduch en 1990)</i></p> -->
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/book3.jpg" alt="">
+                            <!-- <span>Femme et honneur</span>
+                    <p><i>(De Patricia Tonfack-2002)</i></p> -->
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/book4.jpg" alt="">
+                            <!-- <span>Force et respect ou respect et humilite?</span>
+                    <p><i>(Franck Bourey de Milan-2001)</i></p> -->
+                        </div>
+                        <div class="info">
+                            <img src="../../../../assets/img/book5.jpg" alt="">
+                            <!-- <span>Emilie: la femme au reigne d'honneur</span>
+                    <p><i>(Muriel Lindou-2012)</i></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="prev g" class="prev">
+                        < </button>
+                            <button id="next d" class="next"> > </button>
+                </div>
             </div>
         </div>
-        <div class="livres">
-            <h2>Livres</h2>
-            <div class="content">
-                <div class="info">
-                    <img src="../../../../assets/img/book.jpg" alt="">
-                    <span>Femme d'honneur</span>
-                    <p><i>(Martine Elbrish-1968)</i></p>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/book1.jpg" alt="">
-                    <span>Feministe au pas? Je choisi ma voie.</span>
-                    <p><i>(Camilla fotsing-1876)</i></p>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/book2.jpg" alt="" style="height: 300px; margin-left: 8px;">
-                    <span>Se relever ou se perdre?</span>
-                    <p><i>(D'emraude Beduch en 1990)</i></p>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/book3.jpg" alt="">
-                    <span>Femme et honneur</span>
-                    <p><i>(De Patricia Tonfack-2002)</i></p>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/book4.jpg" alt="">
-                    <span>Force et respect ou respect et humilite?</span>
-                    <p><i>(Franck Bourey de Milan-2001)</i></p>
-                </div>
-                <div class="info">
-                    <img src="../../../../assets/img/book5.jpg" alt="">
-                    <span>Emilie: la femme au reigne d'honneur</span>
-                    <p><i>(Muriel Lindou-2012)</i></p>
-                </div>
-            </div>
-            <div class="btn">
-                <button type="button" class="prev" appPrev><</button>
-                <button type="button" class="next" appNext>></button>
-            </div>
-        </div>
-        <div class="films">
+
+
+        <!-- <div class="titre" style="margin-top: 20px; text-decoration: underline; text-decoration-color:brown">
             <h2>Films</h2>
-            <div class="content">
-                <div class="info film">
-                    <img src="../../../../assets/img/movie.jpg" alt="" style="height: 200px;">
-                    <span>Honneur et temerite</span>
-                    <p><i>(Pascaline Tsayo)</i></p>
+            <div class="films">
+                <div id="carrousel" class="carrousel content">
+                    <div id="container" class="">
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie.jpg" alt="">
+                            <span>Honneur et temerite</span>
+                            <p><i>(Pascaline Tsayo)</i></p>
+                        </div>
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie1.jpg" alt="">
+                            <span>Emilie: la femme d'honneur</span>
+                            <p><i>(realise par Evrad bureau)</i></p>
+                        </div>
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie2.jpg" alt="">
+                            <span>Enchante par humilite de grace</span>
+                            <p><i>(Korine Jenova)</i></p>
+                        </div>
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie3.jpg" alt="">
+                            <span>Sparadra rose</span>
+                            <p><i>(Roseline Percher)</i></p>
+                        </div>
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie4.jpg" alt="">
+                            <span>Anabelle Mourdeille</span>
+                            <p><i>(Sepherin Babock)</i></p>
+                        </div>
+                        <div class="info film">
+                            <img src="../../../../assets/img/movie5.jpg" alt="">
+                            <span>Myrabelle et la regle contre les femmes</span>
+                            <p><i>(Maurine Evengeline)</i></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="info film">
-                    <img src="../../../../assets/img/movie1.jpg" alt="">
-                    <span>Emilie: la femme d'honneur</span>
-                    <p><i>(realise par Evrad bureau)</i></p>
-                </div>
-                <div class="info film">
-                    <img src="../../../../assets/img/movie2.jpg" alt="">
-                    <span>Enchante par humilite de grace</span>
-                    <p><i>(Korine Jenova)</i></p>
-                </div>
-                <div class="info film">
-                    <img src="../../../../assets/img/movie3.jpg" alt="">
-                    <span>Sparadra rose</span>
-                    <p><i>(Roseline Percher)</i></p>
-                </div>
-                <div class="info film">
-                    <img src="../../../../assets/img/movie4.jpg" alt="">
-                    <span>Anabelle Mourdeille</span>
-                    <p><i>(Sepherin Babock)</i></p>
-                </div>
-                <div class="info film">
-                    <img src="../../../../assets/img/movie5.jpg" alt="">
-                    <span>Myrabelle et la regle contre les femmes</span>
-                    <p><i>(Maurine Evengeline)</i></p>
+                <div class="btn">
+                    <button id="g prev" class="prev">
+                        < </button>
+                            <button id="d next" class="next"> > </button>
                 </div>
             </div>
-            <div class="btn">
-                <button type="button" class="prev" appPrev><</button>
-                <button type="button" class="next" appNext>></button>
-            </div>
-        </div>
+        </div> -->
     </div>
-</div>
+
+
+    <script>
+        document.body.onload = function () {
+            nbr = 5;
+            p = 0;
+            container = document.getElementById(container)
+            g = document.getElementById(g);
+            d = document.getElementById(d);
+            container.style.width = (800 * nbr) + "px";
+            for (i = 1; i <= nbr; i++) {
+                div = document.createElement("div");
+                div.className = "photo";
+                div.style.backgroundImage = "url('images/im" + i + ".jpg')";
+                container.appendChild(div);
+            }
+            affichermasquer();
+        }
+        g.onclick = function () {
+            if (p > -nbr + 1)
+                p--;
+            container.style.transform = "translate"("+p*800+px")
+            container.style.transform = "all 0.5s ease";
+            affichermasquer();
+        }
+        d.onclick = function () {
+            if (p < 0)
+                p++;
+            container.style.transform = "translate"("+p*800+px")
+            container.style.transform = "all 0.5s ease";
+            affichermasquer();
+        }
+        function affichermasquer() {
+            if (p == -nbr + 1)
+                g.style.visibility = hidden;
+            else
+                g.style.visibility = hidden;
+            if (p == 0)
+                d.style.visibility = hidden;
+            else
+                d.style.visibility = hidden;
+        }
+    </script>

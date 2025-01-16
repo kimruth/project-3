@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
-    
-    #back{
+
+    #back {
         // margin-bottom: 400px;
         // margin-left: -150px;
         position: absolute;
@@ -21,39 +21,41 @@ html{
         width: 130px;
         color: white;
     }
-    button{
+
+    button {
         cursor: pointer;
     }
 
 
-    h1, h2{
+    h1,
+    h2 {
         color: rgb(255, 3, 188);
     }
 
     .contain {
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: 40vh;
+        // width: 100%;
+        // height: 40vh;
         border-bottom-right-radius: 40%;
         border-bottom-left-radius: 40%;
-        
-        .text{
-            background-color: rgba(0, 0, 0, 0.400);
+
+        .text {
+            // background-color: rgba(0, 0, 0, 0.400);
             height: inherit;
-    
+
             h1 {
                 padding-top: 20px;
                 font-size: 4em;
             }
-    
-            p{
+
+            p {
                 font-size: 1.3rem;
-            }      
+            }
         }
     }
 
-    button{
+    button {
         background-color: rgb(2, 182, 254);
     }
 }

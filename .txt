@@ -1,0 +1,4 @@
+npm i jquery --save
+npm i slick-carousel --save
+npm i ngx-slick-carousel --save
+- Aller ans les importations et importer commonModule et slickCarouselModule

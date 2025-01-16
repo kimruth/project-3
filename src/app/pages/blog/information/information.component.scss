@@ -1,68 +1,161 @@
-.information{
+.information {
     margin-top: 50px;
 
-    h2{
+    h2 {
         color: rgb(2, 182, 254);
     }
 
-    .infos{
+    .infos {
+        // background-image:
+        //     linear-gradient(to top left, #f9edf3, #4016f9);
 
-        .content{
+        // .journaux {
+        //     min-height: 55vh;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin-top: 10px;
+        // }
+
+        .livres {
+            // background-image:
+            //     linear-gradient(to top right, #885Cf6, #EC4899);
+            min-height: 55vh;
             display: flex;
-            justify-content: space-around;
             justify-content: center;
-            margin-top: 30px;
-            color: black;
-            overflow: hidden;
-            
-            .info{
-                margin: 0 20px;
-
-                img{
-                    // width: 190px;
-                    height: 250px;
-                }
-            }
-            .film{
-                img{
-                    width: 170px;
-                    height: 200px;
-                }
-            }
-        }
-        .journaux{
-            background: rgba(0, 0, 0, 0.100);
-            margin-top: 20px;
+            align-items: center;
+            margin-top: 10px;
         }
 
-        .livres{
-            // margin-top: 30px;
-            background: rgba(0, 0, 0, 0.195);
+        // .films {
+        //     // background-image:
+        //     // linear-gradient(to bottom right, #4016f9, #f9edf3);
+        //     min-height: 55vh;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin-top: 10px;
+        // }
+    }
+}
+// .carousel{
+//     position: relative;
+//     width: 100%;
+//     height: 370px;
+//     background: black;
+//     overflow: hidden;
+
+//     .info{
+//         position:absolute;
+//         width: 200px;
+//         height: 320px;
+//         text-align: justify;
+//         background-color: #fff;
+//         border-radius: 10px;
+//         padding: 20px;
+//         transition: 0.5s;
+//         left: calc(50% - 110px);
+//         display: inline-block;
+//         top: 0;
+//     }
+
+//     #next, #prev{
+//         position: absolute;
+//         top: 40%;
+//         color:#fff;
+//         background-color: transparent;
+//         bottom: none;
+//         font-size: xx-large;
+//         font-family: monospace;
+//         font-weight: bold;
+//         // left: 50px;
+//     }
+//     #next{
+//         left: unset;
+//         right: 50px;
+//     }
+// }
+// .prev {
+//     position: relative;
+//     right: 43%;
+//     bottom: 180px;
+//     transform: translate(-50%, -50%);
+//     font-size: 5rem;
+//     color: #ffffffbe;
+//     border: none;
+//     background: rgba(2, 183, 254, 0.345);
+// }
+// .next {
+//     position: relative;
+//     left: 47%;
+//     bottom: 180px;
+//     transform: translate(-50%, -50%);
+//     font-size: 5rem;
+//     color: #ffffffbe;
+//     border: none;
+//     background: rgba(2, 183, 254, 0.345);
+// }
+
+#carrousel {
+    width: 800px;
+    height: 300px;
+    border: solid 4px #fff;
+    flex-direction: row;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.529);
+    position: relative;
+    overflow: hidden;
+
+    #container {
+        display: flex;
+        width: 800px;
+        height: 300px;
+
+        img {
+            padding-left: 3px;
+            padding-right: 5px;
+            width: 250px;
+            height: 295px;
         }
 
-        .films{
-            background: rgba(0, 0, 0, 0.100);
-            // margin-top: 30px;
+        // .photo {
+        //     width: 800px;
+        //     height: 400px;
+        //     margin: 0;
+        //     block-size: cover;
+        // }
+
+    }
+}
+.btn {
+    cursor: pointer;
+    width: 70px;
+    // top: 150px;
+    // position: absolute;
+
+    #g {
+        left: 0;
+        color: white;
+        opacity: 0.4;
+        transform: rotate(0deg);
+        transition: all 0.3s ease;
+
+        #g:hover {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.1);
+            transition: all 0.3s ease;
         }
     }
-    .prev{
-        position: relative;
-        right: 43%;
-        bottom: 180px;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
-        color: #ffffffbe;
-        border: none;
-        background: rgba(2, 183, 254, 0.345);
-    }
-    .next{
-        position: relative;
-        left: 47%;
-        bottom: 180px;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
-        color: #ffffffbe;
-        border: none;
-        background: rgba(2, 183, 254, 0.345);
+
+    #d {
+        left: 0;
+        opacity: 0.4;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+
+        #d:hover {
+            opacity: 1;
+            transform: rotate(180deg) scale(1.1);
+            transition: all 0.3s ease;
+        }
     }
 }

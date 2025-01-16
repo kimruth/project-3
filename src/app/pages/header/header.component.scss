@@ -1,7 +1,7 @@
 .header {
     height: 9vh;
     width: 100%;
-    position: fixed;
+    // position: fixed;
     background-image: url(../../../assets/img/12961.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,8 +27,8 @@
 
                 li {
                     list-style: none;
-                    
-                    a:hover{
+
+                    a:hover {
                         color: rgb(255, 3, 188);
                         background: transparent;
                         padding: 3px;
@@ -60,41 +60,77 @@
                 }
             }
 
-            .donate{
+            .donate {
+                form {
+                    display: flex;
+                    input[type=text] {
+                        font-size: 15px;
+                        border: 3px solid #282A35;
+                        height: 40px;
+                        width: 300px;
+                        padding-left: 25px;
+                        background: white;
+                        border-radius: 50px;
+                        outline: 0;
+                        margin-top: 10px;
+                        // margin-left: 10px;
+                    }
 
-                button{
-                    margin-top: 6px;
-                    font-size: 18px;
-                    padding: 8px;
-                    width: 150px;
-                    border-radius: 5px;
-                    border: none;
-                    background-color: rgb(255, 3, 188);
+                    button {
+                        border-radius: 19px;
+                        width: 40px;
+                        height: 40px;
+                        background: white;
+                        color: white;
+                        font-size: 15px;
+                        border: 3px solid black;
+                        cursor: pointer;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        border-top-right-radius: 3px;
+                        // margin-bottom: 10px;
+
+
+                        form.header-form button:hover {
+                            background-color: rgb(233, 196, 106);
+                            transition: 0.1s ease-in;
+                        }
+                    }
                 }
+
+                // button {
+                //     margin-top: 6px;
+                //     font-size: 18px;
+                //     padding: 8px;
+                //     width: 150px;
+                //     border-radius: 5px;
+                //     border: none;
+                //     background-color: rgb(255, 3, 188);
+                // }
             }
         }
     }
 
-    .form{
+    .form {
         width: 250px;
-        ul{
+
+        ul {
             width: 330px;
             display: flex;
             text-align: right;
 
-        li{
-            list-style: none;
-            text-align: left;
-            width: 130px;
-            
-            
-            a{
-                background-color: rgb(255, 3, 188);
-                text-decoration: none;
-                color: white;
-                height: 30vh;
+            li {
+                list-style: none;
+                text-align: left;
+                width: 130px;
+
+                a {
+                    background-color: rgb(255, 3, 188);
+                    text-decoration: none;
+                    color: white;
+                    height: 30vh;
+                }
             }
         }
-    }
     }
 }

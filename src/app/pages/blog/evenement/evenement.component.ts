@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./evenement.component.scss']
 })
 export class EvenementComponent {
-[x: string]: any;
+// [x: string]: any;
   // articles = [
   //   {
   //     id: 1,
@@ -27,16 +27,35 @@ export class EvenementComponent {
   //     readmore: false,
   //   },
   // ]
+  elements = [ 
+    {
+      id: 1,
+      content: `Nous tenons les céminaires tout les mois (au moins une fois par mois).
+                    Les ceminairesse sont
+                    tenus soit en presentiel ou en visio-conference. `,
+      readmore: false
+    },
+    {
+      id: 2,
+      content: `A fin de faire profiter à autant de femmes que possible nos servies, nous organisons des
+                    campagnes de sensibilisation en presentiel pour celle qui n'ont pas accès à notre site internet
+                    ainsi que celles qui n'ont pas encore eu l'occasion de participer à au moins une de nos séances
+                    de céminaire que ça soit en visio-conférence ou en présentiel.
+                    Nous organisons des séances
+                    afin de leur donner un apperçue de ce qu'il en est de nos céminaires.`,
+      readmore: false
+    }
+  ]
   isActive: boolean = true;
 
   readMore(event: Event, index: number) {
     event.preventDefault();
 
-    // this.articles[index].readmore = !this.articles[index].readmore;
-//     if (this.articles[index].readmore == true) {
-//       this.articles[index].readmore = false;
-//     } else {
-//       this.articles[index].readmore = true
-//     }
+    // this.elements[index].readmore = !this.elements[index].readmore;
+    if (this.elements[index].readmore == true) {
+      this.elements[index].readmore = false;
+    } else {
+      this.elements[index].readmore = true
+    }
 }
 }

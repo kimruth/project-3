@@ -1,21 +1,35 @@
-footer{
-    background: rgb(255, 3, 188);
+.start{
+    h2{
+        color: white;
+    }
+.footer {
+    display: flex;
+    justify-content: center;
+    .foot {
+        justify-content: space-evenly;
+        // background-color: blue;
 
-    ul{
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2rem;
-        // background-color: navy;
+        .flex {
+            margin-top: 20px;
+            gap: 10px;
 
-        li{
-            list-style: none;
-            width: 230px;
-            color: black;
+            li {
+                list-style: none;
 
-            a{
-                text-decoration: none;
-                color: white;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.2em;
+                }
             }
         }
     }
+    .accounts{
+        margin-top: 20px;
+
+        .flex{
+            padding: 20px;
+        }
+    }
+}
 }

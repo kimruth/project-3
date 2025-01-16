@@ -1,28 +1,32 @@
 <app-header></app-header>
-<div class="contain">
-    <div class="text">
-        <h1>Assistance</h1>
-        <p>Afin de pouvoir vous apporter notre assistance, nous avons etabli une etude sur differentes base qui vous
-            permetra d'avoir une idee d'amelioration de votre personne et vous aidera a vous affirmer et de vous
-            ameliorer dans chaque domaine de votre vie.
-        </p>
-    </div>
-</div>
-<div class="col-4 mb-4" *ngFor="let article of articles; index as i">
-    <div class="card">
-
-        <div class="card-body">
-            <h5 class="card-title" appHighlight>{{article.title}}</h5>
-            <p class="card-text" *ngIf="!article.readmore">{{article.content | word}}</p>
-            <p class="card-text" *ngIf="article.readmore">{{article.content}}</p>
-            <a href="{{article.id}}" class="btn" [ngClass]="article.readmore ? ' btn-success' : 'btn-danger'" (click)="readMore($event, i)">{{'Read More' | uppercase}}</a>
-        </div>
-    </div>
-</div>
-
 <main>
-    <app-atelier></app-atelier>
-    <app-engagement></app-engagement>
+    <div class="content">
+        <div class="contain">
+            <!-- <div class="text">
+                <h1>Assistance</h1>
+                <p>Afin de pouvoir vous apporter notre assistance, nous avons etabli une etude sur differentes base qui
+                    vous
+                    permetra d'avoir une idee d'amelioration de votre personne et vous aidera a vous affirmer et de vous
+                    ameliorer dans chaque domaine de votre vie.
+                </p>
+            </div> -->
+        </div>
+        <div class="col-4 mb-4" *ngFor="let article of articles; index as i">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title" appHighlight>{{article.title}}</h5>
+                    <p class="card-text" *ngIf="!article.readmore">{{article.content | word}}</p>
+                    <p class="card-text" *ngIf="article.readmore">{{article.content}}</p>
+                    <a href="{{article.id}}" class="btn" [ngClass]="article.readmore ? ' btn-success' : 'btn-danger'"
+                        (click)="readMore($event, i)">{{'Read More' | uppercase}}</a>
+                </div>
+            </div>
+        </div>
+
+        <app-atelier></app-atelier>
+        <app-engagement></app-engagement>
+    </div>
 </main>
 
 <app-footer></app-footer>

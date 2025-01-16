@@ -1,24 +1,30 @@
-.events{
+.events {
     margin-top: 50px;
-    p{
-        color: black;
-    }
-
-    .evenements{
-        display: flex;
-        justify-content: space-around;
-        color: black;
-        margin-top: 30px;
-
-        button{
-            border: none;
-            border-radius: 3px;
-            margin-top: 5px;
-            padding: 5px;
-        }
-
-        .seance{
+    
+    .evenements {
+        // background: blue;
+        // width: 50%;
+        .seance {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            margin-top: 30px;
             width: 25%;
+            
+            .evenement {
+                width: 200px;
+                margin-left: 40px;
+                p {
+                    text-align: left;
+                    color: black;
+                }
+                button {
+                    border: none;
+                    border-radius: 3px;
+                    margin-top: 5px;
+                    padding: 5px;
+                }
+            }
         }
     }
 }

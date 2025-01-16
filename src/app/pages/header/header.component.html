@@ -28,7 +28,13 @@
                 <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
             </ul>
             <div class="donate">
-                <button routerLink="/contact">Faire un don</button>
+                <form class="header-form" style="width:300px">
+                    <input type="text" placeholder="Recherche" id="search2">
+                    <button type="button" id="searchbtn">
+                        <img src="https://cdn0.iconfinder.com/data/icons/ui-essence/32/_8ui-128.png" width="25px">
+                    </button>
+                </form>
+                <!-- <button routerLink="/contact">Faire un don</button> -->
             </div>
             <button (click)="logout()"
                 style="width: 60px; border: none; border-radius: 3px; height:35px; margin-top: 5px; color: white;">Logout</button>
