@@ -1,0 +1,17 @@
+<form (ngSubmit)="submitContent()" class="comment-form">
+    <input
+      type="text"
+      [(ngModel)]="author"
+      name="author"
+      placeholder="Your Name"
+      required
+    />
+    <textarea
+      [(ngModel)]="commentContent"
+      name="content"
+      placeholder="Your Comment"
+      required
+    ></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  

@@ -31,6 +31,9 @@ html {
     h2 {
         color: rgb(255, 3, 188);
     }
+    h2{
+        text-decoration: underline;
+    }
 
     .contain {
         background-repeat: no-repeat;
@@ -59,3 +62,24 @@ html {
         background-color: rgb(2, 182, 254);
     }
 }
+
+// // for the dark mode
+// /* Define Light Mode (Default) */
+// :root {
+//     --bg-color: #ffffff;
+//     --text-color: #000000;
+//   }
+  
+//   /* Define Dark Mode */
+//   .dark-theme {
+//     --bg-color: #121212;
+//     --text-color: #ffffff;
+//   }
+  
+//   /* Apply the variables */
+//   body {
+//     background-color: var(--bg-color);
+//     color: var(--text-color);
+//     transition: background-color 0.3s ease, color 0.3s ease;
+//   }
+  

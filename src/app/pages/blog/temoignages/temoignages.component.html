@@ -1,7 +1,33 @@
 <div class="temoignages">
+    <!-- <template id="alert">
+        <div class="alert alert-dismissable fade">
+            <div class="js-text">
+                Erreur Lors De L'envoi Du Formulaire
+            </div>
+            <button type="button" class="btn-close" data-bs-dismissable="true"></button>
+        </div>
+    </template> -->
+    <!-- <form 
+        action="" 
+        class="js-form-fetch" 
+        data-endpoint="https://jsonplaceholder.typicode.com/comments"
+        data-template="#comment" 
+        data-target=".comment"
+        data-element="{'id': '.js-id', 'name': '.js-username', 'body': '.js-content'}">
+        <div class="row mb-2">
+            <div class="col-sm">
+                <input data-to=".js-username" type="text" name="name" class="form-content" placeholder="name1">
+            </div>
+            <div class="col-sm">
+                <input type="text" name="name" class="form-content" placeholder="name1">
+            </div>
+        </div>
+        <textarea data-to=".js-content" name="body" class="form-control mb-2" style=""></textarea>
+        <button class="btn btn-primary">Envoyer</button>
+    </form> -->
     <div class="temoignage">
-        <h2>Temoignages</h2>
-        <div class="temoin">
+        <h2 style="margin-top: 30px;">Temoignages</h2>
+        <!-- <div class="temoin">
             <img src="" alt="">
             <h5>Lana</h5>
             <p>Japprecie de tout coeur ce que vous faite, vos conseils m'ont ete tres eficace. J'ai reussi a me relever
@@ -47,19 +73,37 @@
             <img src="" alt="">
             <h5>Ophelia</h5>
             <p>Je n'ai assiste qu'a trois ceminaires et une campagne jusqu'ici mais tellement captivee deja. J'adore</p>
-        </div>
-        <div class="temoin">
-            <img src="" alt="">
-            <h5>Audrey Martinee</h5>
-            <p>Vous sauvez des gens et leur redonnez leurs honneurs.</p>
-        </div>
-        <div class="temoin">
-            <img src="" alt="">
-            <h5>Elena Katerine</h5>
-            <p>Vous avez aide ma fille a retrouver sa voie. Merci.</p>
-        </div>
+        </div> -->
+
+        <!-- <template id="comment">
+            <article class="mb-4">
+                <img src="" alt="">
+                <div class="mb-1"> <strong class="js-username">Audrey Martinee</strong> #<span class="js-id"></span>
+                </div>
+                <p class="js-content">Vous sauvez des gens et leur redonnez leurs honneurs.</p>
+            </article>
+        </template> -->
+        <!-- <div data-endpoint="https://jsonplaceholder.typicode.com/comments?_limit=10" data-template="#comment"
+            data-target=".comment" data-element="{'id': '.js-id', 'name': '.js-username', 'body': '.js-content'}"
+            class="temoin text-center js-infinite-pagination">
+            <div class="spinner-border" role="status"></div>
+        </div> -->
     </div>
-    <div class="boutique">
+    <!-- <div class="boutique">
         <button>Visiter la boutique</button>
-    </div>
+    </div> -->
 </div>
+
+<app-comment-form></app-comment-form>
+
+<div class="comments">
+    <div *ngFor="let comment of comments" class="comment">
+      <h4>{{ comment.author }}</h4>
+      <p>{{ comment.content }}</p>
+      <small>{{ comment.date }}</small>
+    </div>
+    <button (click)="loadComments()" [disabled]="isLoading" class="load-more">
+      {{ isLoading ? 'Loading...' : 'Load More' }}
+    </button>
+</div>
+  

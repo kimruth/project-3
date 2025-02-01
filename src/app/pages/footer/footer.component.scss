@@ -1,35 +1,37 @@
-.start{
-    h2{
+.start {
+    h2 {
         color: white;
     }
-.footer {
-    display: flex;
-    justify-content: center;
-    .foot {
-        justify-content: space-evenly;
-        // background-color: blue;
 
-        .flex {
-            margin-top: 20px;
-            gap: 10px;
+    .footer {
+        display: flex;
+        justify-content: center;
 
-            li {
-                list-style: none;
+        .foot {
+            justify-content: space-evenly;
 
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 1.2em;
+            .flex {
+                margin-top: 20px;
+                gap: 10px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.2em;
+                    }
                 }
             }
         }
-    }
-    .accounts{
-        margin-top: 20px;
 
-        .flex{
-            padding: 20px;
+        .accounts {
+            margin-top: 20px;
+
+            .flex {
+                padding: 20px;
+            }
         }
     }
-}
 }

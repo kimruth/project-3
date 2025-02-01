@@ -1,28 +1,63 @@
 .events {
-    margin-top: 50px;
-    
-    .evenements {
-        // background: blue;
-        // width: 50%;
-        .seance {
-            display: flex;
-            justify-content: space-around;
-            color: black;
-            margin-top: 30px;
-            width: 25%;
-            
-            .evenement {
-                width: 200px;
-                margin-left: 40px;
-                p {
-                    text-align: left;
-                    color: black;
+
+    margin-top: 0;
+    h2 {
+        // margin-top: 30px;
+        padding-top: 30px;
+    }
+    .actions {
+        justify-content: center;
+        display: flex;
+        color: black;
+        gap: 200px;
+
+        .evenements {
+            margin-left: 0;
+            width: 400px;
+
+            .seance {
+                display: flex;
+                justify-content: space-around;
+                color: black;
+                margin-top: 30px;
+                width: inherit;
+
+                .ceminaires {
+                    padding: 10px;
+                    background-color: rgba(2, 183, 254, 0.566);
+                    box-shadow: 1px 0.3px 9px;
                 }
-                button {
-                    border: none;
+                .campagnes {
+                    padding: 10px;
+                    background-color: rgb(2, 183, 254, 0.566);
+                    box-shadow: 1px 0.3px 9px;
+                }
+                img {
                     border-radius: 3px;
-                    margin-top: 5px;
-                    padding: 5px;
+                }
+                .img:hover {
+                    border-radius: 50px;
+                }
+                .evenement {
+                    width: inherit;
+
+                    p {
+                        text-align: left;
+                        color: black;
+                    }
+                    .button {
+                        border: none;
+                        border-radius: 3px;
+                        margin-left: 300px;
+                        padding: 5px;
+                        text-decoration: none;
+                        color: black;
+                        background-color: rgb(255, 3, 188);
+                    }
+                    .button:hover {
+                        padding: 10px;
+                        color: white;
+                    }
                 }
             }
         }

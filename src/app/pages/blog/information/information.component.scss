@@ -6,156 +6,61 @@
     }
 
     .infos {
-        // background-image:
-        //     linear-gradient(to top left, #f9edf3, #4016f9);
-
-        // .journaux {
-        //     min-height: 55vh;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     margin-top: 10px;
-        // }
 
         .livres {
-            // background-image:
-            //     linear-gradient(to top right, #885Cf6, #EC4899);
             min-height: 55vh;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 10px;
         }
-
-        // .films {
-        //     // background-image:
-        //     // linear-gradient(to bottom right, #4016f9, #f9edf3);
-        //     min-height: 55vh;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     margin-top: 10px;
-        // }
     }
 }
-// .carousel{
-//     position: relative;
-//     width: 100%;
-//     height: 370px;
-//     background: black;
-//     overflow: hidden;
-
-//     .info{
-//         position:absolute;
-//         width: 200px;
-//         height: 320px;
-//         text-align: justify;
-//         background-color: #fff;
-//         border-radius: 10px;
-//         padding: 20px;
-//         transition: 0.5s;
-//         left: calc(50% - 110px);
-//         display: inline-block;
-//         top: 0;
-//     }
-
-//     #next, #prev{
-//         position: absolute;
-//         top: 40%;
-//         color:#fff;
-//         background-color: transparent;
-//         bottom: none;
-//         font-size: xx-large;
-//         font-family: monospace;
-//         font-weight: bold;
-//         // left: 50px;
-//     }
-//     #next{
-//         left: unset;
-//         right: 50px;
-//     }
-// }
-// .prev {
-//     position: relative;
-//     right: 43%;
-//     bottom: 180px;
-//     transform: translate(-50%, -50%);
-//     font-size: 5rem;
-//     color: #ffffffbe;
-//     border: none;
-//     background: rgba(2, 183, 254, 0.345);
-// }
-// .next {
-//     position: relative;
-//     left: 47%;
-//     bottom: 180px;
-//     transform: translate(-50%, -50%);
-//     font-size: 5rem;
-//     color: #ffffffbe;
-//     border: none;
-//     background: rgba(2, 183, 254, 0.345);
-// }
 
 #carrousel {
-    width: 800px;
-    height: 300px;
+    width: 700px;
     border: solid 4px #fff;
-    flex-direction: row;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.529);
     position: relative;
     overflow: hidden;
 
     #container {
         display: flex;
-        width: 800px;
-        height: 300px;
+        width: 100%;
+        height: 400px;
+        transition: 2s ease all;
 
         img {
-            padding-left: 3px;
-            padding-right: 5px;
-            width: 250px;
-            height: 295px;
+            padding-right: 3px;
+            height: 400px;
+            width: 693px;
+            display: block;
         }
-
-        // .photo {
-        //     width: 800px;
-        //     height: 400px;
-        //     margin: 0;
-        //     block-size: cover;
-        // }
-
     }
 }
-.btn {
+
+.prev,
+.next {
+    position: absolute;
+    // top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
     cursor: pointer;
-    width: 70px;
-    // top: 150px;
-    // position: absolute;
+    padding: 10px;
+    z-index: 1;
 
-    #g {
-        left: 0;
-        color: white;
-        opacity: 0.4;
-        transform: rotate(0deg);
-        transition: all 0.3s ease;
-
-        #g:hover {
-            opacity: 1;
-            transform: rotate(0deg) scale(1.1);
-            transition: all 0.3s ease;
-        }
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
     }
+}
 
-    #d {
-        left: 0;
-        opacity: 0.4;
-        transform: rotate(180deg);
-        transition: all 0.3s ease;
+.prev {
+    right: 940px;
+}
 
-        #d:hover {
-            opacity: 1;
-            transform: rotate(180deg) scale(1.1);
-            transition: all 0.3s ease;
-        }
-    }
+.next {
+    right: 285px;
 }

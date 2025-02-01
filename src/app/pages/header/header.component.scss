@@ -1,8 +1,7 @@
 .header {
     height: 9vh;
     width: 100%;
-    // position: fixed;
-    background-image: url(../../../assets/img/12961.avif);
+    background-image: url(../../../assets/img/612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -23,7 +22,6 @@
                 justify-content: space-between;
                 width: 65%;
                 margin-top: 10px;
-                // background-color: rgba(0, 0, 0, 0.655);
 
                 li {
                     list-style: none;
@@ -38,6 +36,13 @@
                     a {
                         text-decoration: none;
                         color: white;
+
+                        &:focus {
+                            background-color: rgb(255, 3, 188);
+                            color: black;
+                            padding: 5px;
+                            border-radius: 2px;
+                        }
                     }
 
                     .drop {
@@ -63,6 +68,7 @@
             .donate {
                 form {
                     display: flex;
+
                     input[type=text] {
                         font-size: 15px;
                         border: 3px solid #282A35;
@@ -72,23 +78,24 @@
                         background: white;
                         border-radius: 50px;
                         outline: 0;
-                        margin-top: 10px;
-                        // margin-left: 10px;
+                        margin-top: 05px;
+                        margin-left: 10px;
                     }
 
-                    button {
+                    button[type=button] {
                         border-radius: 19px;
                         width: 40px;
                         height: 40px;
-                        background: white;
                         color: white;
                         font-size: 15px;
                         border: 3px solid black;
                         cursor: pointer;
-                        margin-top: 10px;
-                        margin-left: 10px;
+                        margin-top: 05px;
+                        margin-left: 250px;
                         border-top-right-radius: 3px;
-                        // margin-bottom: 10px;
+                        background: none;
+                        border: none;
+                        position: absolute;
 
 
                         form.header-form button:hover {

@@ -1,64 +1,50 @@
 .container{
     font-size: 1.1em;
+    overflow-x: hidden;
     p{
         color: black;
     }
 }
 .personnel{
     display: flex;
-    width: 65%;
-    margin-left: 60px;
+    width: 90%;
+    margin-left: 50px;
     align-content: center;
+    justify-content: center;
     margin-top: 30px;
-    background: rgba(255, 0, 157, 0.535);
-    
-    h4{
-        color: black;
-    }
-    .conseil{
-        // width: 50vw;
+    gap: 10px;
 
-        p{
-            margin-left: 150px;
-        }
-        h4{
-            margin-left: 200px;
+    .image{
+        width: 400px;
+        height: 300px;
+
+        img{
+            width: inherit;
+            height: inherit;
         }
     }
     .conseils{
-        width: 120vw;
+        border-color: rgb(255, 3, 188);
     }
-
-    .image{
-        width: 900px;
-    }
-
     h4{
-        width: 40%;
+        color: black;
+    }
+    .conseils{
+        background-color: aqua;
+        width: 600px;
+
+        p{
+            margin-left: 30px;
+        }
+    }
+    h4{
         margin-left: 50px;
         margin-bottom: 15px;
     }
     p{
-        color: black;
-        width: 60%;
+        margin-right: 50px;
+        text-align: left;
+        padding: 10px;
+        margin-right: 5px;
     }
-}
-.person{
-    background-image: url(../../../../assets/img/jimage2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.perso1{
-    background-image: url(../../../../assets/img/images4.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.perso{
-    margin-left: 380px;
-}
-.persoe{
-    background-image: url(../../../../assets/img/44034.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
 }

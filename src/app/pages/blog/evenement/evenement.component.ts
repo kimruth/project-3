@@ -35,6 +35,8 @@ export class EvenementComponent {
                     tenus soit en presentiel ou en visio-conference. `,
       readmore: false
     },
+  ]
+  articles = [
     {
       id: 2,
       content: `A fin de faire profiter à autant de femmes que possible nos servies, nous organisons des
@@ -43,7 +45,7 @@ export class EvenementComponent {
                     de céminaire que ça soit en visio-conférence ou en présentiel.
                     Nous organisons des séances
                     afin de leur donner un apperçue de ce qu'il en est de nos céminaires.`,
-      readmore: false
+      moreRead: false
     }
   ]
   isActive: boolean = true;
@@ -57,5 +59,19 @@ export class EvenementComponent {
     } else {
       this.elements[index].readmore = true
     }
+}
+
+// Deuxieme readmore
+active: boolean = true;
+
+moreRead(event: Event, index: number) {
+  event.preventDefault();
+
+  // this.elements[index].readmore = !this.elements[index].readmore;
+  if (this.articles[index].moreRead == true) {
+    this.articles[index].moreRead = false;
+  } else {
+    this.articles[index].moreRead = true
+  }
 }
 }

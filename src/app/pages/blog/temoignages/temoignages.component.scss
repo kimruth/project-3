@@ -1,37 +1,75 @@
-.temoignages {
-    display: flex;
+// .temoignages {
+//     display: flex;
+//     background-image: url(../../../../assets/img/jimage4.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     border-top-left-radius: 200px;
+//     border-bottom-right-radius: 250px;
+//     margin-top: 20px;
 
-    .temoignage {
-        color: black;
-        margin-top: 50px;
-        margin-bottom: 20px;
+//     .temoignage {
+//         border-top-left-radius: 200px;
+//         // border-bottom-right-radius: 300px;
+//         background-color: rgba(0, 0, 0, 0.468);
+//         color: black;
 
-        .temoin {
-            width: 50%;
-            margin-left: 100px;
+//         .temoin {
+//             margin-bottom: 10px;
+//             width: 50%;
+//             margin-left: 100px;
 
-            h5 {
-                color: rgb(2, 182, 254);
-                text-align: left;
-            }
+//             h5 {
+//                 color: rgb(2, 182, 254);
+//                 text-align: left;
+//             }
 
-            p {
-                border: 1px solid black;
-            }
-        }
-    }
+//             p {
+//                 background-color: white;
+//                 border: 1px solid black;
+//             }
+//         }
+//     }
 
-    .boutique {
-        width: 300px;
-        button {
-            border: none;
-            border-radius: 3px;
-            padding: 5px;
-            background-color: rgb(255, 3, 188);
-            color: white;
-            margin-right: 90px;
-            font-size: 1.1em;
-            margin-top: 250px;
-        }
-    }
+//     .boutique {
+//         border-bottom-right-radius: 250px;
+//         background-color: rgba(0, 0, 0, 0.468);
+//         width: 300px;
+//         button {
+//             border: none;
+//             border-radius: 3px;
+//             padding: 5px;
+//             background-color: rgb(255, 3, 188);
+//             color: white;
+//             margin-right: 90px;
+//             font-size: 1.1em;
+//             margin-top: 250px;
+//         }
+//     }
+// }
+
+.comments {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comment {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.load-more {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more:disabled {
+  background-color: #aaa;
 }

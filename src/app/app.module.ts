@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,7 @@ import { WordPipe } from './pages/pipes/word.pipe';
 import { BgSizePipe } from './pages/pipes/bg-size.pipe';
 import { PrevDirective } from './pages/directives/prev.directive';
 import { NextDirective } from './pages/directives/next.directive';
-
+import { CommentFormComponent } from "./pages/blog/comment-form/comment-form/comment-form.component";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,6 @@ import { NextDirective } from './pages/directives/next.directive';
     AProposComponent,
     AccueilComponent,
     FooterComponent,
-    TemoignagesComponent,
     AtelierComponent,
     EngagementComponent,
     RessourcesComponent,
@@ -61,7 +61,10 @@ import { NextDirective } from './pages/directives/next.directive';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-  ],
+    TemoignagesComponent,
+    CommentFormComponent,
+    HttpClientModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })

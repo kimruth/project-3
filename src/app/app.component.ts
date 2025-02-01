@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ThemeService } from './services/theme.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,12 +13,18 @@ export class AppComponent {
   isActive: boolean = true;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private themeService: ThemeService
   ){}
-  logout(){
+
+  
+    toggleTheme(): void {
+      this.themeService.toggleDarkMode();
+    }
+  // logout(){  
     
-    localStorage.removeItem('auth')
-    this.router.navigate(['signin'])
+  //   localStorage.removeItem('auth')
+  //   this.router.navigate(['signin'])
     
-  }
+  // }
 }

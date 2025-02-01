@@ -1,23 +1,31 @@
 .welcome {
-    background-image: url(../../../assets/img/12961.avif);
-    height: 85vh;
+    background-image: url(../../../assets/img/blue-background1.jpg);
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: left;
     font-size: 1.5em;
     width: inherit;
-    // justify-items: center;
 
-    .details{
+    .details {
         height: inherit;
         width: inherit;
-        background: rgba(0, 0, 0, 0.500);
+        display: flex;
+        gap: 150px;
+        // background: rgba(0, 0, 0, 0.584);
     }
 
-    .text{
-        padding-top: 150px;
+    .text {
+        padding-top: 120px;
         padding-left: 60px;
-        width: 50%;
+        width: 70%;
+    }
+
+    .image {
+        background-image: url(../../../assets/img/new-background.jpg);
+        background-size: cover;
+        width: 40%;
+        background-repeat: no-repeat;
     }
 
     i {
@@ -34,69 +42,70 @@
         border-radius: 2px;
     }
 }
+
 main {
-    background: rgba(0, 0, 0, 0.105);
-    color: black;
+    background-image: url(../../../assets/img/blog-bacground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+    .forbg-c {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(250, 2, 201, 0.281);
 
-    .contain {
-        height: inherit;
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
+        .contain {
+            height: inherit;
 
-        h1 {
-            color: rgb(255, 3, 158);
-            // text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            // background-color: blue;
-            height: 270px;
-            
-            
-            .content {
-                width: 190px;
-                height: 250px;
-
-                p{
-                    text-align: left;
-                }
-
-                .title{
-                    width: 70%;
-                }
-                h4 {
-                    width: 50%;
-                    border: 0;
-                    border-right: 10px solid rgb(255, 3, 188);
-                    border-left: 10px solid rgb(255, 3, 188);
-                    margin-bottom: 2px;
-                    border-radius: 50%;
-                    // text-align: center;
-                    color: black;
-                }
-
-                img {
-                    width: inherit;
-                    height: 100px;
-                    border-top-right-radius: 30px;
-                    border-bottom-left-radius: 30px;
-                }
-
-                button {
-                    background-color: rgb(2, 182, 254);
-                    border: 1px black;
-                    width: 60px;
-                    border-radius: 30px;
-                }
+            h1 {
+                color: rgb(255, 3, 158);
+                margin-bottom: 20px;
             }
 
-        }
-    }
+            .container {
+                display: flex;
+                justify-content: space-around;
 
-    .details {
-        background-color: rgba(0, 0, 0, 0.105);
+                .content {
+                    width: 300px;
+                    height: 450px;
+
+                    p {
+                        text-align: left;
+                        color: #ffff;
+                        font-size: larger;
+                    }
+
+                    .title {
+                        width: 70%;
+                    }
+
+                    h4 {
+                        width: 50%;
+                        margin-top: 50px;
+                        border: 0;
+                        border-right: 10px solid rgb(255, 3, 188);
+                        border-left: 10px solid rgb(255, 3, 188);
+                        margin-bottom: 2px;
+                        color: black;
+                    }
+
+                    img {
+                        width: inherit;
+                        height: 200px;
+                        border-top-right-radius: 30px;
+                        border-bottom-left-radius: 30px;
+                    }
+
+                    button {
+                        background-color: rgb(2, 182, 254);
+                        border: 1px black;
+                        width: 60px;
+                        padding: 5px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
     }
 }
