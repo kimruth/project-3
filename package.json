@@ -1,6 +1,6 @@
 {
   "name": "project-3",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,6 +19,11 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "nodemailer": "^6.10.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -35,5 +40,20 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.1.3"
-  }
+  },
+  "description": "S. T. Ruth's personal project",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimruth/project-3.git"
+  },
+  "keywords": [
+    "Feminity"
+  ],
+  "author": "Seugnou Tsayem Ruth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimruth/project-3/issues"
+  },
+  "homepage": "https://github.com/kimruth/project-3#readme"
 }

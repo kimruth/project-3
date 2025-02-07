@@ -1,9 +1,10 @@
 main {
-    // background-image:
-    // linear-gradient(to top right, rgb(2, 182, 254), rgb(255, 3, 188));
     margin-top: 0;
-    // position: fixed;
     background-image: url(../../../assets/img/blog-bacground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
+    .bg-c {
+        background-color: rgba(0, 0, 0, 0.356);
+    }
 }

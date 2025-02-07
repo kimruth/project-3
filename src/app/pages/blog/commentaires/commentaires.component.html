@@ -1,0 +1,23 @@
+<div class="temoignages">
+    <div class="temoignage">
+        <h2 style="margin-top: 30px;">Temoignages</h2>
+    <!-- <div class="boutique">
+        <button>Visiter la boutique</button>
+    </div> -->
+</div>
+
+<div class="comment-section">
+    <h3>Partagez votre expérience</h3>
+
+    <textarea [(ngModel)]="newComment" placeholder="Écrivez un commentaire..."></textarea>
+    <button (click)="addComment()">Envoyer</button>
+
+    <div class="comments">
+        <div *ngFor="let comment of comments" class="comment">
+            <p>{{ comment.message }}</p>
+            <small>{{ comment.createdAt | date: 'short' }}</small>
+        </div>
+    </div>
+
+    <button *ngIf="hasMore" (click)="loadMore()">Charger plus</button>
+</div>

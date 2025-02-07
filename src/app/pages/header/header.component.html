@@ -2,30 +2,35 @@
     <div class="nav">
         <div class="nav-bar">
             <div class="logo">
-                <img src="../../../assets/img/RFLogo.png" alt="" style="width: 50px; margin-top: 3px; border-radius: 50%;">
+
+                <img src="../../../assets/img/RFLogo.png" alt=""
+                    style="width: 50px; margin-top: 3px; border-radius: 50%;">
             </div>
             <ul>
                 <li><a routerLink="/accueil">Accueil</a></li>
-                <li><a routerLink="/blog" routerLinkActive="active">Blog</a>
-                    <!-- <div class="drop">
+                <li class="dropdown" (mouseenter)="toggleDropdown('blog')" (mouseleave)="toggleDropdown('contact')">
+                    <a routerLink="/blog" routerLinkActive="active">Blog ▼</a>
+                    <!-- <ul *ngIf="dropdownOpen['services']" class="dropdown-menu">
                 <li><a routerLink="" routerLinkActive="active">Evenement</a></li>
                 <li><a routerLink="" routerLinkActive="active">Information</a></li>
                 <li><a routerLink="" routerLinkActive="active">Temoignage</a></li>
-        </div> -->
+                    </ul> -->
                 </li>
-                <li><a routerLink="/assistance" routerLinkActive="active">Assistance</a>
-                    <!-- <div class=" drop drop1">
+                <li class="dropdown" (mouseenter)="toggleDropdown('assistance')" (mouseleave)="toggleDropdown('contact')">
+                    <a routerLink="/assistance" routerLinkActive="active">Assistance ▼</a>
+                    <!-- <ul *ngIf="dropdownOpen['services']" class="dropdown-menu">
         <li><a routerLink="" routerLinkActive="active">Atelier de conseils</a></li>
         <li><a routerLink="" routerLinkActive="active">S'engager avec la sosiete</a></li>
-    </div> -->
+                    </ul> -->
                 </li>
-                <li><a routerLink="/a-propos" routerLinkActive="active">A propos</a>
-                    <!-- <div class="drop drop2">
+                <li class="dropdown" (mouseenter)="toggleDropdown('a propos')" (mouseleave)="toggleDropdown('contact')">
+                    <a routerLink="/a-propos" routerLinkActive="active">A propos</a>
+                    <!-- <ul *ngIf="dropdownOpen['services']" class="dropdown-menu">
     <li><a routerLink="" routerLinkActive="active">Ressources</a></li>
     <li><a routerLink="" routerLinkActive="active">Colaboration</a></li>
-</div> -->
+                    </ul> -->
                 </li>
-                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact ▼</a></li>
             </ul>
             <div class="donate">
                 <form class="header-form" style="width:300px">

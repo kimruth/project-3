@@ -84,7 +84,7 @@
                 </button>
                 <h1>Contactez nous & Profitez</h1>
             </div>
-            <div class="inputs">
+            <!-- <div class="inputs">
                 <div class="put">
                     <div class="flex">
                         <input type="name" name="name" placeholder="Votre Nom" required>
@@ -99,7 +99,18 @@
                     <input type="text" name="text" placeholder="Entrez vos attentes" required>
                 </div>
                 <button>Soumettre</button>
-            </div>
+            </div> -->
+            <form (submit)="sendEmail(); $event.preventDefault()">
+                <input type="text" [(ngModel)]="name" placeholder="Votre Nom" required />
+                <input type="email" [(ngModel)]="email" placeholder="Votre Email" required />
+                <textarea [(ngModel)]="message" placeholder="Votre Message" required></textarea>
+                <button type="submit">Envoyer</button>
+              
+                <p *ngIf="successMessage" style="color: green">{{ successMessage }}</p>
+                <p *ngIf="errorMessage" style="color: red">{{ errorMessage }}</p>
+              </form>
+              
+              
         </div>
     </div>
 </div>

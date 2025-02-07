@@ -9,7 +9,7 @@ import { AssistanceComponent } from './pages/assistance/assistance.component';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { TemoignagesComponent } from './pages/blog/temoignages/temoignages.component';
+import { CommentairesComponent } from './pages/blog/commentaires/commentaires.component';
 import { AtelierComponent } from './pages/assistance/atelier/atelier.component';
 import { EngagementComponent } from './pages/assistance/engagement/engagement.component';
 import { RessourcesComponent } from './pages/a-propos/ressources/ressources.component';
@@ -29,6 +29,7 @@ import { BgSizePipe } from './pages/pipes/bg-size.pipe';
 import { PrevDirective } from './pages/directives/prev.directive';
 import { NextDirective } from './pages/directives/next.directive';
 import { CommentFormComponent } from "./pages/blog/comment-form/comment-form/comment-form.component";
+import { DarkModeComponent } from './pages/dark-mode/dark-mode.component';
 
 @NgModule({
   declarations: [
@@ -55,13 +56,14 @@ import { CommentFormComponent } from "./pages/blog/comment-form/comment-form/com
     BgSizePipe,
     PrevDirective,
     NextDirective,
+    DarkModeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    TemoignagesComponent,
+    CommentairesComponent,
     CommentFormComponent,
     HttpClientModule
 ],

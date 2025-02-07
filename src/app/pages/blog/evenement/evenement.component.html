@@ -16,32 +16,11 @@
                         et variée.</p>
                     <a href="{{element}}" (click)="readMore($event, i) "class="button">{{ 'plus' | uppercase }}</a>
                 </div>
-                <!-- <div class="evenement campagnes">
-                <h4>Nos campagnes</h4>
-                <img src="../../.././../assets/img/2.jpg" alt="" width="250px">
-                <p *ngIf="!article.readmore">{{article.content | word}}</p>
-                <p *ngIf="article.readmore">{{article.content}} <br>
-                    C'est grace aux <a href="" style="color: rgb(255, 3, 188);">dons généreux</a> que vous faites
-                    que
-                    nous pouvons organiser ces campagnes de sensibilisation</p>
-                <a href="{{article}}" (click)="moreRead($event, i)">{{ 'plus' | uppercase
-                    }}</a>
-            </div> -->
             </div>
         </div>
 
         <div class=" evenements articles" *ngIf="active">
             <div class="seance" *ngFor="let article of articles; index as i">
-                <!-- <div class="evenement ceminaires">
-                <h4>Nos céminaire</h4>
-                /** <img src="../../../../assets/img/12.jpg" alt="" width="250px">
-                <p *ngIf="!element.readmore">{{element.content | word}}</p>
-                <p *ngIf="element.readmore">{{element.content}} <a href="" style="color: rgb(255, 3, 188);">Ici</a>,
-                    vous aurez vos pass d'adhésion à nos conférence.
-                    Chaque seance traite une question precise et
-                    et variée.</p>
-                <a href="{{element}}" (click)="readMore($event, i)">{{ 'plus' | uppercase }}</a>
-            </div> -->
                 <div class="evenement campagnes">
                     <h4>Nos campagnes</h4>
                     <img (click)="moreRead($event, i)" src="../../.././../assets/img/2.jpg" alt="" width="350px">

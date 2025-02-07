@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+// import { Comment } from '../../../../models/comment.model'
 import { CommentService } from 'src/app/services/comment.service';
 
 @Component({
@@ -16,18 +17,18 @@ export class CommentFormComponent {
 
   constructor (private commentService: CommentService) {}
 
-  submitContent(): void {
-    if(!this.commentContent.trim() || !this.author.trim()) return;
+  // submitContent(): void {
+  //   if(!this.commentContent.trim() || !this.author.trim()) return;
 
-    const newComment = {
-      content: this.commentContent,
-      author: this.author,
-      date: new Date().toISOString(),
-    };
+  //   const newComment = {
+  //     content: this.commentContent,
+  //     author: this.author,
+  //     date: new Date().toISOString(),
+  //   };
 
-    this.commentService.addComment(newComment).subscribe(() => {
-      this.commentContent = '';
-      this.author = '';
-    })
-  }
+  //   this.commentService.addComment(newComment).subscribe(() => {
+  //     this.commentContent = '';
+  //     this.author = '';
+  //   })
+  // }
 }
